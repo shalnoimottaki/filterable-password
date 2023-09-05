@@ -1,0 +1,104 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*
+=============== 
+Variables
+===============
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 35px;
+  background: linear-gradient(to left top, #031A9A, #8B53FF);
+}
+
+.wrapper {
+  background: #fff;
+  width: 450px;
+  padding: 28px;
+  border-radius: 7px;
+}
+.wrapper .pass-field {
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+.wrapper .pass-field input {
+  width: 100%;
+  height: 100%;
+  padding: 0 17px;
+  outline: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.wrapper .pass-field i {
+  right: 18px;
+  position: absolute;
+  color: #999;
+  font-size: 1.2rem;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper .content {
+  margin: 20px 0 10px;
+}
+.wrapper .content p {
+  font-size: 1.3rem;
+}
+.wrapper .content .requirement-list {
+  margin-top: 20px;
+}
+.wrapper .content .requirement-list li {
+  list-style: none;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.wrapper .content .requirement-list li.valid {
+  color: green;
+}
+.wrapper .content .requirement-list li.valid i {
+  color: green;
+  font-size: 1.3rem;
+}
+.wrapper .content .requirement-list li i {
+  font-size: 0.6rem;
+  color: #aaa;
+  width: 20px;
+}
+.wrapper .content .requirement-list li span {
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  body, .wrapper {
+    padding: 15px;
+  }
+  .wrapper .pass-field {
+    height: 55px;
+  }
+  .wrapper .pass-field input p, .wrapper .pass-field .content p {
+    font-size: 1.15rem;
+  }
+  .wrapper .pass-field i, .wrapper .pass-field .requirement-list li {
+    font-size: 1.1rem;
+  }
+  .wrapper .pass-field .requirement-list li span {
+    margin-left: 7px;
+  }
+}/*# sourceMappingURL=styles.css.map */
